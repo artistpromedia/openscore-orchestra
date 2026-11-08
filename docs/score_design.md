@@ -1,6 +1,6 @@
 # Hauptstimme: Score design choices
 
-- Minimal deviations from MuseScore defaults (manual edits do not convert)
+- Minimal deviations from the original notation editor defaults (manual edits do not convert)
 - Most systematic changes as defined in the `.mss` style sheet:
   - Justify full page.
   - All present instruments showing at all times (none hidden).
@@ -41,13 +41,13 @@
     - Hairpin symbols for all short range (e.g., 1 bar),
     - Some discretion for busy staves ("cresc" takes less space).
     - Note that this is certainly not consistenly implemented througout at present.
-  - Stave and page breaks mostly follow MuseScore defaults.
+  - Stave and page breaks mostly follow the original notation editor defaults.
     - Given the stylistic choices above, we make no attempt for page breaks to follow the source.
       - E.g., using Eulenberg for the Beethoven means a very different page size.
     - Notable exceptions include Brahms 4/iv, which is in a completely regular 8-bar phrasing.
       - We set this out with page breaks every 4 or 8 bars depending on the note density.
     - Tempo markings:
-      - Tempos etc. exactly as in the source and properly encoded in MuseScore (mostly successful in conversion).
+      - Tempos etc. exactly as in the source and properly encoded in the original notation editor (mostly successful in conversion).
         - Tempo text (e.g., `Allegro`) is only ever included if present in the original source.
         - Tempo in metronome mark is included:
           - If present in the original source.
@@ -65,8 +65,8 @@
 - Bar (measure) counting. 
   - This is a perennially complex issue, and one often broken by export change of format.
   - Please see [our recent paper about this topic with a proposed solution here](https://dl.acm.org/doi/10.1145/3625135.3625136). 
-  - For now, on MuseScore files we leave the default measure count (1, 2, 3, ...):
-    - MuseScore offers some functionality to 'exclude bars from the measure count'. This can lead to improved layout in the app, but experimentation shows that it does not convert well.
+  - For now, on the original notation editor files we leave the default measure count (1, 2, 3, ...):
+    - the original notation editor offers some functionality to 'exclude bars from the measure count'. This can lead to improved layout in the app, but experimentation shows that it does not convert well.
       - We therefore avoid such _manual_ changes and (attempt) to fix them automatically from the measure map.
     - Example issues: anacruses, first/second time bars, split bars.
     

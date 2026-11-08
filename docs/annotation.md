@@ -72,7 +72,7 @@ This task aims to capture something of that effect.
 **What about rests?**
 
 - Annotations (lyrics or text expressions) must always be added to _notes_ and not rests.
-  - MuseScore will let you add a lyric to a rest, but this will get lost in conversion, so avoid doing that.
+  - the original notation editor will let you add a lyric to a rest, but this will get lost in conversion, so avoid doing that.
 - We can (often) have rests between phrases by leaving the filler unannotated (rest at the end of the preceding segment).
 
 
@@ -92,9 +92,9 @@ This task aims to capture something of that effect.
   - we don't support overlapping here (we enforce _a single moment_ of change).
 
 
-**Must I use MuseScore?**
+**Must I use the original notation editor?**
 
-- For the _musical preparation_ of getting to know the score, you may well want to prefer to do this away from MuseScore. This part is entirely up to you! 
+- For the _musical preparation_ of getting to know the score, you may well want to prefer to do this away from the original notation editor. This part is entirely up to you!
 - E.g., you could use:
   - a physical, printed copy of the score with an actual recording of the work, and then
   - transfer the annotations / observations over later.
